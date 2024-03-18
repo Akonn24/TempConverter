@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+
+        body{
+            background-image: linear-gradient(to right, rgb(211, 156, 156), rgb(157, 157, 253));
+            padding-top: 20vh;
+        }
+
+        #typeit{
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .divv{
+            display: flex;
+            justify-content: center;
+        }
+
+        .converto{
+            display: flex;
+            justify-content: center;
+        }
+
+        .radiok{
+            display: flex;
+            justify-content: center;
+        }
+
+        .sbm{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        .answe{
+            display: flex;
+            justify-content: center;
+        }
+        #cv2{
+            font-size: 2rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 10px;
+        }
+        #celce{
+            font-size: 1.7rem;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #fahre{
+            font-size: 1.7rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #submitButton{
+            font-size: 2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(250, 238, 222);
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            #typeit{
+                font-size: 3rem;
+            }
+            #cv2{
+                font-size: 2rem;
+            }
+            #celce{
+                font-size: 2rem;
+            }
+            #fahre{
+                font-size: 2rem;
+            }
+            #submitButton{
+                font-size: 2rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            #typeit{
+                font-size: 3.2rem;
+            }
+            #cv2{
+                font-size: 2.6rem;
+            }
+            #celce{
+                font-size: 2.6rem;
+            }
+            #fahre{
+                font-size: 2.6rem;
+            }
+            #submitButton{
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <label id="typeit">Type the degree :</label> <br><br>
+
+    <div class="divv">
+      <input id="degreeinp" type="text"><br><br>
+    </div>
+    <div class="converto">
+        <label id="cv2">Convert to:</label><br>
+    </div>
+    <div class="radiok">
+        <input id="cButton" type="radio" name="unit">
+        <label id="celce">Celcius</label><br>
+        <input id="fButton" type="radio" name="unit">
+        <label id="fahre">Fahrenheit</label><br>
+    </div>
+
+    <div class="sbm">
+        <button type="submit" id="submitButton">Submit</button><br><br>
+    </div>
+
+    <div class="answe">
+        <label id="theAnswer"></label>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
